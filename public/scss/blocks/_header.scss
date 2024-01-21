@@ -1,0 +1,83 @@
+.divider{
+    border: none;
+    border-bottom: 1px solid #e1e4ed;
+}
+.header{
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        padding: 2.4rem 0 1.7rem;
+        font-size: 1.6rem;
+        &__text{
+            color: $second-color;
+        }
+        &__phone{
+            color: $second-color;
+            text-decoration: none;
+            &::before{
+                content: "\e0cd";
+                font-family: 'Material Icons';
+            }
+        }
+        
+    }
+    &-bottom{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2.6rem;
+        align-items: center;
+        &__navbar{
+            display: flex;
+            align-items: center;
+        }
+        &__logo{
+            display: block;
+            margin-right: 5.8rem;
+        }
+        &__menu{
+            display: flex;
+            &-item{
+                margin-right: 3rem;
+                padding: 1.8rem 0;
+                &:hover .header-bottom__submenu{
+                    display: block;
+                }
+            }
+            &-item:last-child{
+                margin-right: 0;
+                // position: relative;
+            }
+            &-link{
+                text-decoration: none;
+                font-style: 1.6rem;
+                color: $second-color;
+                &:hover{
+                    color: $main-color;
+                    text-shadow: 0 0 1px $second-color;
+                }
+                &_active{
+                    text-decoration: none;
+                    color: $main-color;
+                    font-weight: 700;
+                }
+            }
+        }
+        &__submenu{
+            display: none;
+            position: absolute;
+            top: 15rem;
+            left: 67.5rem;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px 0 $second-color;
+            background-color: #fff;
+            & .header-bottom__menu-item{
+                padding: 0.5rem;
+            }
+        }
+        &__actions-text{
+            display: inline-block;
+            margin: 0 0.5rem ;
+        }
+    }
+}

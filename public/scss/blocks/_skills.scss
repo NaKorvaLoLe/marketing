@@ -1,0 +1,31 @@
+.skills{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14rem;
+    &__wrapper{
+        width: 550px;
+    }
+    &__text{
+        margin: 3.2rem 0 6.4rem 0;
+    }
+    &__progress{
+        margin-bottom: 3rem;
+        &-label{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: -1.3rem;
+        }
+        &-scale{
+            width: 550px;
+            height: 6px;
+            border-radius: 2.5px;
+        }
+        & ::-webkit-progress-value{
+            background-color: $third-color;
+        }
+        & ::-webkit-progress-bar{
+            background-color: #E1E4ED;
+        }
+    }
+    
+}

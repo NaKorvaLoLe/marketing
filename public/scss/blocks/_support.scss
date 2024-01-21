@@ -1,0 +1,18 @@
+.support{
+    margin-top: 14rem;
+    display: flex;
+    justify-content: space-between;
+    &-item{
+        width: 555px;
+        display: flex;
+        &__text{
+            margin: 20px 0 28px 0;
+        }
+        & .material-icons{
+            display: block;
+            margin-right: 3rem;
+            font-size: 3.2rem;
+            color: $third-color;
+        }
+    }
+}

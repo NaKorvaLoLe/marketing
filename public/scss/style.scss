@@ -1,0 +1,143 @@
+@import 'base/variables';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #fff;
+    font-family: "Nunito", sans-serif;
+    color: $second-color;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+ul{
+    list-style: none;
+}
+
+h1,h2,h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: $main-color;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.btn{
+    border: none;
+    text-decoration: none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    &-light{
+        background-color: transparent;
+        border: solid 1px $third-color;
+        font-family: "Poppins", sans-serif;
+        font-style: 1.4rem;
+        color: $third-color;
+    }
+    &-dark{
+        font-size: 1.6rem;
+        color: #fff;
+        background-image: linear-gradient(to top, #6852ed, #ba43fc);
+        padding: 1.3rem 3rem;
+
+    }
+}
+
+.btn-bottom{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 110px;
+    background-color: $third-color;
+    border-radius: 50%;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    &>span{
+        margin: auto;
+        font-size: 5rem;
+    }
+}
+
+.link{
+    position: relative;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    color: $main-color;
+    font-family: "Poppins" sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
+    &:hover{
+        text-shadow: 0 0 1px $second-color;
+    }
+    &::after{
+        content: "\f1df";
+        font-family: 'Material Icons';
+        position: absolute;
+        left: 10.5rem;
+        top: 0;
+    }
+}
+
+.infoblock{
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 $fourth-color;
+    background-color: #fff;
+    padding: 3rem;
+    &__title{
+        font-size: 2.2rem;
+        margin-bottom: 1.9rem;
+    }
+    &__link{
+        display: none;
+    }
+    & .material-icons{
+        color: $third-color;
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+    }
+    &:hover{
+        background-image: linear-gradient(to top, #6852ed, #ba43fc);
+        & .material-icons{
+            display: none;
+        }
+        & .infoblock__title {
+            color: #fff
+        }
+        & .infoblock__text{
+            color: #fff
+        }
+        & .infoblock__link{
+            display: inline-block;
+            color: #fff;
+            margin-top: 3rem;
+        }
+    }
+}
+
+@import "blocks/header";
+@import "blocks/stage";
+@import "blocks/features";
+@import "blocks/article";
+@import "blocks/video";
+@import "blocks/services";
+@import "blocks/skills";
+@import "blocks/call";
+@import "blocks/price";
+@import "blocks/support";
+@import "blocks/footer";

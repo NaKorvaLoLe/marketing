@@ -1,0 +1,31 @@
+.article{
+    
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__img{
+        width: 50%;
+        flex-shrink: 0;
+    }
+    &__content{
+        width: 50%;
+        flex-shrink: 0;
+        padding-left: 6rem;
+    }
+    &__title{
+        width: 412px;
+        font-size: 2.8rem;
+        line-height: 1.5;
+        margin-bottom: 3rem;
+    }
+    &__text{
+        margin-bottom: 4.8rem;
+    }
+    & .btn{
+        margin-right: 3rem;
+    }
+    &_reverse{
+        flex-direction: row-reverse;
+    }
+}

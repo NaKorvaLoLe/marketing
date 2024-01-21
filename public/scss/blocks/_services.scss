@@ -1,0 +1,18 @@
+.services{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    &__wrapper{
+        margin-right: 6rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.8rem;
+    }
+    &__title{
+        margin-top: 7.8rem;
+        font-size: 3.4rem;
+    }
+    &__text{
+        margin: 3rem 0 4.7rem 0;
+    }
+}

@@ -1,0 +1,30 @@
+.video{
+    margin-top: 12rem;
+    height: 480px;
+    background: url('./../../img/background.png') no-repeat;
+    background-size: cover;
+    padding-top: 14rem;
+    &__wrapper{
+        margin: 0 auto;
+        width: 411px;
+    }
+    & .material-icons{
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-image: linear-gradient(to top, #6852ed, #ba43fc);
+        font-size: 80px;
+        color: #fff;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+    &__title{
+        margin-top: 2.4rem;
+        text-align: center;
+    }
+    &__text{
+        margin-top: 1.9rem;
+        text-align: center;
+    }
+}
